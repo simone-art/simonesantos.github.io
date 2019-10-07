@@ -1,6 +1,10 @@
 .bg-roxo {
     background-color: #7e459B;
 }
+a:hover {
+    text-decoration: none;
+}
+
 nav a:hover {
     font-weight: 500;
 }
@@ -8,4 +12,14 @@ nav a:hover {
     object-fit: cover;
     object-position: 0 90%;
     height: 65vh;
+}
+.redes-sociais span {
+    color: black;
+}
+.redes-sociais i {
+    color: #7e459B;
+}
+.redes-sociais a:hover {
+font-weight: 500;
+color: #7e459B;
 }

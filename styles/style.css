@@ -4,3 +4,8 @@
 nav a:hover {
     font-weight: 500;
 }
+.carousel-item {
+    object-fit: cover;
+    object-position: 0 90%;
+    height: 65vh;
+}

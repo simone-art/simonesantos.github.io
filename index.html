@@ -104,9 +104,9 @@
         <!-- // ES MEJOR COLOCAR EN LA SECCIÓN UNA CLASE Y ESCRIBIR:
         CLASS: "bg-roxo text-white py-4) -->
         <section class="bg-roxo text-white py-4">
-            <div class="container2 d-flex flex-column flex-lg-row">
+            <div class="container2">
                 <h3 class="text-center flex-lg-row">Habilidades</h3>
-                <div class="d-flex flex-column text-center bd-highlight mb-3 justify-content-center elementos">
+                <div class="d-flex flex-row text-center bd-highlight mb-3 justify-content-center elementos">
                     <div>
                         <i class="fab fa-html5 p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">HTML</p>
@@ -114,17 +114,17 @@
                     <div>
                         <i class="fab fa-css3-alt p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">CSS</p>
-                    </div> 
+                    </div>
                     <div>
                         <i class="fab fa-js p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">JavaScript</p>
                     </div>
                 </div>
-            <div class="d-flex flex-column text-center bd-highlight mb-3 justify-content-center">
-                <div class="d-flex flex-column">
-                    <i class="fab fa-sass p-2 flex-fill bd-highlight ml-1"></i>
-                    <p class="p-2 flex-fill bd-highlight ml-1">Sass</p>
-                </div>
+                <div class="d-flex flex-row text-center bd-highlight mb-3 justify-content-center">
+                    <div class="d-flex flex-column">
+                        <i class="fab fa-sass p-2 flex-fill bd-highlight ml-1"></i>
+                        <p class="p-2 flex-fill bd-highlight ml-1">Sass</p>
+                    </div>
                     <div>
                         <i class="fas fa-book p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">jQuery</p>
@@ -133,8 +133,8 @@
                         <i class="fab fa-react p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">React</p>
                     </div>
-            </div>    
-                <div class="d-flex flex-column text-center bd-highlight mb-3 justify-content-center">
+                </div>
+                <div class="d-flex flex-row text-center bd-highlight mb-3 justify-content-center">
                     <div class=>
                         <i class="fab fa-bootstrap p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">Bootstrap</p>
@@ -143,29 +143,123 @@
                         <i class="fab fa-git-alt p-2 flex-fill bd-highlight ml-1"></i>
                         <p class="p-2 flex-fill bd-highlight ml-1">Git</p>
                     </div>
-                        <div>
-                            <i class="fas fa-tasks text-white p-2 flex-fill bd-highlight ml-1"></i>
-                            <p class="text-white p-2 flex-fill bd-highlight ml-1">Scrum</p>
-                </div>  </div>
-
-                    <section class="col-lg-6 text-center">
-                        <div class="text-white">
-                            <h3>Sobre</h3>
-                            <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam
+                    <div>
+                        <i class="fas fa-tasks text-white p-2 flex-fill bd-highlight ml-1"></i>
+                        <p class="text-white p-2 flex-fill bd-highlight ml-1">Scrum</p>
+                    </div>
+                </div>
+        
+                <section class="col-lg-6 text-center">
+                    <div class="text-white">
+                        <h3>Sobre</h3>
+                        <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam
                             modi magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui
                             saepe necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
-                            <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
-                        </div>
-                    </section>
-
-                </div>
+                        <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
+                    </div>
+                </section>
+        
+            </div>
         </section>
 
         <!-- cards - meus projetos -->
-        <section>
+        <section class="container py-4 text-center">
             <h3>Portfólio</h3>
+            <div class="row justify-content-center">
             <!-- cards -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/modal-01.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do
+                        card.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">Visitar</a>
+                </div>
+            </div>
+            <!-- modal card 1 -->
+            <div class="modal" tabindex="-1" role="dialog" id= "modal-01">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Texto do corpo do modal, é aqui.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- card 2 -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/modal-02.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do
+                        card.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-02">Visitar</a>
+                </div>
+            </div>
+            <!-- modal card 2 -->
+            <div class="modal" tabindex="-1" role="dialog" id="modal-02">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Texto do corpo do modal, é aqui.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card tamanho-card">
+                <img class="card-img-top imagem-cards" src="./assets/images/modal-03.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do
+                        card.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-03">Visitar</a>
+                </div>
+            </div>
+            </div>
+            <!-- modal card 3 -->
+            <div class="modal" tabindex="-1" role="dialog" id = "modal-03">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Texto do corpo do modal, é aqui.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- modais -->
             <img src="./assets/images/modal-01.jpg" alt="">
             <img src="./assets/images/modal-02.jpg" alt="">
@@ -173,9 +267,9 @@
         </section>
 
         <!-- footer -->
-        <footer>
-            <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a
-                        href="http://reprograma.com.br/index.html" target="_blank">{reprograma}</a></span> 2019</small>
+        <footer class="bg-roxo text-white text-center">
+            <small>Desenvolvido com Bootstrap por Simone Santos enquanto aluna da <span>
+            <a href="http://reprograma.com.br/index.html" target="_blank">{reprograma}</a></span> 2019</small>
         </footer>
 
         <!-- adicionar jQuery aqui! -->

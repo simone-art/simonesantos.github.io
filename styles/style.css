@@ -23,3 +23,12 @@ nav a:hover {
 font-weight: 500;
 color: #7e459B;
 }
+.mb-1 {
+margin-bottom:20px;
+}
+.container2 {
+    background-color: #7e459B;
+}
+/* .elementos i {
+    margin-left: 40px;
+} */

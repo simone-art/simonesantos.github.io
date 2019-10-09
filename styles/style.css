@@ -11,7 +11,6 @@ nav a:hover {
 .carousel-item {
     object-fit: cover;
     object-position: 0 90%;
-    height: 65vh;
 }
 .redes-sociais span {
     color: black;
@@ -23,15 +22,15 @@ nav a:hover {
 font-weight: 500;
 color: #7e459B;
 }
-.mb-1 {
+/* .mb-1 {
 margin-bottom:20px;
-}
+} */
 .container2 {
     background-color: #7e459B;
 }
-/* .elementos i {
-    margin-left: 40px;
-} */
+.habilidades i {
+    font-size: 30px;
+}
 
 .tamanho-card {
     width: 18rem;
@@ -41,3 +40,8 @@ margin-bottom:20px;
     object-fit: cover;
     object-position: top;
 }
+.footer a:hover {
+font-weight: 500;
+color: #7e459B;
+}
+
